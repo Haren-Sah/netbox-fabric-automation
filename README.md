@@ -267,7 +267,6 @@ templates/
 
 Harendra Prasad Sah
 
-CCNA | Network Security Student | Cisco NetAcad Riders 2026 Gold Winner (Australia, Fiji, New Zealand and Papua New Guinea Region)
+CCNA | Network Security Student | Cisco APJC NetAcad Riders 2026 Gold Winner (Australia, Fiji, New Zealand and Papua New Guinea Region)
 
 Interested in Network Automation, Data Center Networking, Cloud Infrastructure and Network Development Engineering.
-"""
