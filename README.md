@@ -57,10 +57,11 @@ The objective was to apply Infrastructure as Code (IaC) principles to physical n
 
 ```mermaid
 graph TD
-    LEAF1 --- SPINE1
-    LEAF1 --- SPINE2
-    LEAF2 --- SPINE1
-    LEAF2 --- SPINE2
+    SPINE1 --- LEAFF1
+    SPINE1 --- LEAFF2
+    SPINE2 --- LEAFF1
+    SPINE2 --- LEAFF2
+     
 
     linkStyle 0,1,2,3 stroke:#38bdf8,stroke-width:4px;
 ```
