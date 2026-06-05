@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# NetBox Secrets
+inventory/config.py
+
+# Alternative Secret Files
+.env
+.env.*
+
+# Python Packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated Temporary Files
+*.tmp
+*.bak
+
+# Terraform (future use)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Ansible (future use)
+*.retry
+
+# Local Development
+local_settings.py

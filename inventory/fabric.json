@@ -1,0 +1,30 @@
+{
+    "LEAF1": {
+        "role": "Leaf",
+        "vendor": "Cisco",
+        "model": "Cisco-Leaf",
+        "asn": 65101,
+        "loopback": "10.255.1.1"
+    },
+    "LEAF2": {
+        "role": "Leaf",
+        "vendor": "Arista",
+        "model": "Arista-Leaf",
+        "asn": 65102,
+        "loopback": "10.255.1.2"
+    },
+    "SPINE1": {
+        "role": "Spine",
+        "vendor": "Cisco",
+        "model": "Cisco-Spine",
+        "asn": 65001,
+        "loopback": "10.255.0.1"
+    },
+    "SPINE2": {
+        "role": "Spine",
+        "vendor": "Arista",
+        "model": "Arista-Spine",
+        "asn": 65002,
+        "loopback": "10.255.0.2"
+    }
+}

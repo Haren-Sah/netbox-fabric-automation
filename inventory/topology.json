@@ -1,0 +1,66 @@
+{
+    "LEAF1": {
+        "neighbors": [
+            {
+                "local_interface": "Ethernet1",
+                "remote_device": "SPINE1",
+                "remote_interface": "Ethernet1",
+                "remote_asn": null
+            },
+            {
+                "local_interface": "Ethernet2",
+                "remote_device": "SPINE2",
+                "remote_interface": "Ethernet1",
+                "remote_asn": null
+            }
+        ]
+    },
+    "LEAF2": {
+        "neighbors": [
+            {
+                "local_interface": "Ethernet1",
+                "remote_device": "SPINE1",
+                "remote_interface": "Ethernet2",
+                "remote_asn": null
+            },
+            {
+                "local_interface": "Ethernet2",
+                "remote_device": "SPINE2",
+                "remote_interface": "Ethernet2",
+                "remote_asn": null
+            }
+        ]
+    },
+    "SPINE1": {
+        "neighbors": [
+            {
+                "local_interface": "Ethernet1",
+                "remote_device": "LEAF1",
+                "remote_interface": "Ethernet1",
+                "remote_asn": null
+            },
+            {
+                "local_interface": "Ethernet2",
+                "remote_device": "LEAF2",
+                "remote_interface": "Ethernet1",
+                "remote_asn": null
+            }
+        ]
+    },
+    "SPINE2": {
+        "neighbors": [
+            {
+                "local_interface": "Ethernet1",
+                "remote_device": "LEAF1",
+                "remote_interface": "Ethernet2",
+                "remote_asn": null
+            },
+            {
+                "local_interface": "Ethernet2",
+                "remote_device": "LEAF2",
+                "remote_interface": "Ethernet2",
+                "remote_asn": null
+            }
+        ]
+    }
+}

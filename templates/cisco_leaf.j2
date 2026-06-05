@@ -1,0 +1,11 @@
+hostname {{ hostname }}
+
+interface Loopback0
+ ip address {{ loopback }}/32
+
+router bgp {{ asn }}
+  bgp log-neighbor-changes
+
+{% for neighbor in neighbors %}
+neighbor {{ neighbor.remote_device }} remote-as {{ neighbor.remote_asn }}
+{% endfor %}
