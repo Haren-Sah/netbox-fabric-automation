@@ -12,6 +12,10 @@ The objective was to apply Infrastructure as Code (IaC) principles to physical n
 
 ## Architecture
 
+![NetBox Automation Architecture Flow](docs/screenshots/architecture.png)
+
+---
+
 ```text
                     NetBox
              (Source of Truth)
