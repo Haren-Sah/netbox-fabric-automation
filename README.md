@@ -211,7 +211,7 @@ templates/
 ## Screenshots
 ### NetBox Devices WEB
 
-![NetBox Devices Web](docs/screenshots/netbox-Devices-Web.png)
+![NetBox Devices Web](docs/screenshots/netbox-Devices-Web.PNG)
 
 ### NetBox Devices
 
