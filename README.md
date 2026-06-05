@@ -12,32 +12,10 @@ The objective was to apply Infrastructure as Code (IaC) principles to physical n
 
 ## Architecture
 
-```text
-                    NetBox
-             (Source of Truth)
-                        |
-                        |
-                  Python API
-                        |
-        ---------------------------------
-        |               |               |
-        |               |               |
- Inventory Export  Topology Discovery  Validation
-        |               |               |
-        -------------------------------
-                        |
-                 Jinja2 Templates
-                        |
-        ---------------------------------
-        |                               |
-        |                               |
-   Cisco Configs                 Arista Configs
-                        |
-                        |
-              Documentation Engine
-```
+![NetBox Automation Architecture Flow](docs/screenshots/architecture.PNG)
 
 ---
+
 
 ## Technologies Used
 
@@ -77,18 +55,15 @@ The objective was to apply Infrastructure as Code (IaC) principles to physical n
 
 ## Data Center Topology
 
-```text
-               SPINE1
-              /      \
-             /        \
-            /          \
-        LEAF1        LEAF2
-            \          /
-             \        /
-              \      /
-               SPINE2
-```
+```mermaid
+graph TD
+    LEAF1 --- SPINE1
+    LEAF1 --- SPINE2
+    LEAF2 --- SPINE1
+    LEAF2 --- SPINE2
 
+    linkStyle 0,1,2,3 stroke:#38bdf8,stroke-width:4px;
+```
 ---
 
 ## Workflow
@@ -234,10 +209,13 @@ templates/
 ---
 
 ## Screenshots
+### NetBox Devices WEB
 
-### NetBox Inventory
+![NetBox Devices Web](docs/screenshots/netbox-Devices-Web.png)
 
-![NetBox Inventory](docs/screenshots/netbox-inventory.png)
+### NetBox Devices
+
+![NetBox Devices](docs/screenshots/netbox-devices.png)
 
 ### Device Topology
 
@@ -250,6 +228,14 @@ templates/
 ### Validation Results
 
 ![Validation Results](docs/screenshots/validation-results.png)
+
+### NetBox Fabric Report
+
+![NetBox Fabric Report](docs/screenshots/fabric_report.png)
+
+### NetBox Fabric JSON
+
+![NetBox Fabric JSON](docs/screenshots/fabric-json.png)
 
 ---
 
