@@ -209,10 +209,13 @@ templates/
 ---
 
 ## Screenshots
+### NetBox Devices WEB
 
-### NetBox Inventory
+![NetBox Devices Web](docs/screenshots/netbox-Devices-Web.png)
 
-![NetBox Inventory](docs/screenshots/netbox-inventory.png)
+### NetBox Devices
+
+![NetBox Devices](docs/screenshots/netbox-devices.png)
 
 ### Device Topology
 
@@ -225,6 +228,14 @@ templates/
 ### Validation Results
 
 ![Validation Results](docs/screenshots/validation-results.png)
+
+### NetBox Fabric Report
+
+![NetBox Fabric Report](docs/screenshots/fabric_report.png)
+
+### NetBox Fabric JSON
+
+![NetBox Fabric JSON](docs/screenshots/fabric-json.png)
 
 ---
 
