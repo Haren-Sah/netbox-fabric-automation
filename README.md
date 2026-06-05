@@ -12,36 +12,10 @@ The objective was to apply Infrastructure as Code (IaC) principles to physical n
 
 ## Architecture
 
-![NetBox Automation Architecture Flow](docs/screenshots/architecture.png)
+![NetBox Automation Architecture Flow](docs/screenshots/architecture.PNG)
 
 ---
 
-```text
-                    NetBox
-             (Source of Truth)
-                        |
-                        |
-                  Python API
-                        |
-        ---------------------------------
-        |               |               |
-        |               |               |
- Inventory Export  Topology Discovery  Validation
-        |               |               |
-        -------------------------------
-                        |
-                 Jinja2 Templates
-                        |
-        ---------------------------------
-        |                               |
-        |                               |
-   Cisco Configs                 Arista Configs
-                        |
-                        |
-              Documentation Engine
-```
-
----
 
 ## Technologies Used
 
@@ -81,18 +55,15 @@ The objective was to apply Infrastructure as Code (IaC) principles to physical n
 
 ## Data Center Topology
 
-```text
-               SPINE1
-              /      \
-             /        \
-            /          \
-        LEAF1        LEAF2
-            \          /
-             \        /
-              \      /
-               SPINE2
-```
+```mermaid
+graph TD
+    LEAF1 --- SPINE1
+    LEAF1 --- SPINE2
+    LEAF2 --- SPINE1
+    LEAF2 --- SPINE2
 
+    linkStyle 0,1,2,3 stroke:#38bdf8,stroke-width:4px;
+```
 ---
 
 ## Workflow
